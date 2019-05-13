@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>店长宝</title>
+    <link rel="stylesheet" href="../assets/css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="../assets/css/font-icomoon.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script>
+        // //自适应设备
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                isIOS = navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
+                dpr = isIOS ? Math.min(win.devicePixelRatio, 3) : 1,
+                dpr = window.top === window.self ? dpr : 1, //被iframe引用时，禁止缩放
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            docEl.dataset.dpr = dpr;
+            var recalc = function () {
+                var width = docEl.clientWidth;
+                if (width / dpr > 750) {
+                    width = 750 * dpr;
+                }
+                docEl.dataset.percent = 100;
+                docEl.style.fontSize = width / 10 + 'px';
+            };
+            recalc();
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="../assets/css/marketing_2.css" />
+</head>
+
+<body class="ui-mobile-viewport ui-overlay-z">
+    <!--主页-->
+    <div class="ui-page-theme-z ui-page-footer-fixed ui-page-active">
+        <header>
+            <em>营销</em>
+            <!-- <a href="#" class="arrow_right">查看历史数据<i class="fa fa-angle-right imargin"></i></a> -->
+        </header>
+        <main>
+            <div class="header">
+                <div class="chart-wrap">
+                    <div class="canvas-wrap">
+                        <canvas class="cirle-canvas">您的浏览器不支持此比例图！</canvas>
+                        <div class="data-wrap">
+                            <p>本月发放数量：8000</p>
+                            <p>本月领取率：75%</p>
+                            <p>本月使用率：31%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-content pd">
+                <div class="ui-body ui-body-a bb1">
+                    <h3><a href="#" class="ui-link-border" data-ajax="false">5元代金券
+                            <i class="fa">2019-2-22</i></a></h3>
+                    <div class="ui-grid-b widget">
+                        <div class="ui-block-a">
+                            <h2>8000</h2>
+                            <p>发放数量</p>
+                        </div>
+                        <div class="ui-block-b">
+                            <h2>90%</h2>
+                            <p>领取率</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <h2>20%</h2>
+                            <p>使用率</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-body ui-body-a bb1">
+                    <h3><a href="#" class="ui-link-border" data-ajax="false">5元代金券
+                            <i class="fa">2019-2-22</i></a></h3>
+                    <div class="ui-grid-b widget">
+                        <div class="ui-block-a">
+                            <h2>8000</h2>
+                            <p>发放数量</p>
+                        </div>
+                        <div class="ui-block-b">
+                            <h2>90%</h2>
+                            <p>领取率</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <h2>20%</h2>
+                            <p>使用率</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-body ui-body-a bb1">
+                    <h3><a href="#" class="ui-link-border" data-ajax="false">5元代金券
+                            <i class="fa">2019-2-22</i></a></h3>
+                    <div class="ui-grid-b widget">
+                        <div class="ui-block-a">
+                            <h2>8000</h2>
+                            <p>发放数量</p>
+                        </div>
+                        <div class="ui-block-b">
+                            <h2>90%</h2>
+                            <p>领取率</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <h2>20%</h2>
+                            <p>使用率</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-body ui-body-a bb1">
+                    <h3><a href="#" class="ui-link-border" data-ajax="false">5元代金券
+                            <i class="fa">2019-2-22</i></a></h3>
+                    <div class="ui-grid-b widget">
+                        <div class="ui-block-a">
+                            <h2>8000</h2>
+                            <p>发放数量</p>
+                        </div>
+                        <div class="ui-block-b">
+                            <h2>90%</h2>
+                            <p>领取率</p>
+                        </div>
+                        <div class="ui-block-c">
+                            <h2>20%</h2>
+                            <p>使用率</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="content">
+                <ul>
+                    <li>
+                        <p class="item-title">
+                            <em class="item-name">5元代金券</em>
+                            <em class="item-time">2019/9/23</em>
+                        </p>
+                        <div class="item-content">
+                            <div class="item-content-num">
+                                <em>1000</em>
+                                <em>63%</em>
+                                <em>23%</em>
+                            </div>
+                            <div class="item-content-desc">
+                                <em>发放数量</em>
+                                <em>领取率</em>
+                                <em>使用率</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-backgound-color">
+                        <p class="item-title">
+                            <em class="item-name">5元代金券</em>
+                            <em class="item-time">2019/9/23</em>
+                        </p>
+                        <div class="item-content">
+                            <div class="item-content-num">
+                                <em>1000</em>
+                                <em>63%</em>
+                                <em>23%</em>
+                            </div>
+                            <div class="item-content-desc">
+                                <em>发放数量</em>
+                                <em>领取率</em>
+                                <em>使用率</em>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                            <p class="item-title">
+                                <em class="item-name">5元代金券</em>
+                                <em class="item-time">2019/9/23</em>
+                            </p>
+                            <div class="item-content">
+                                <div class="item-content-num">
+                                    <em>1000</em>
+                                    <em>63%</em>
+                                    <em>23%</em>
+                                </div>
+                                <div class="item-content-desc">
+                                    <em>发放数量</em>
+                                    <em>领取率</em>
+                                    <em>使用率</em>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-backgound-color">
+                                <p class="item-title">
+                                    <em class="item-name">5元代金券</em>
+                                    <em class="item-time">2019/9/23</em>
+                                </p>
+                                <div class="item-content">
+                                    <div class="item-content-num">
+                                        <em>1000</em>
+                                        <em>63%</em>
+                                        <em>23%</em>
+                                    </div>
+                                    <div class="item-content-desc">
+                                        <em>发放数量</em>
+                                        <em>领取率</em>
+                                        <em>使用率</em>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-backgound-color">
+                                    <p class="item-title">
+                                        <em class="item-name">5元代金券</em>
+                                        <em class="item-time">2019/9/23</em>
+                                    </p>
+                                    <div class="item-content">
+                                        <div class="item-content-num">
+                                            <em>1000</em>
+                                            <em>63%</em>
+                                            <em>23%</em>
+                                        </div>
+                                        <div class="item-content-desc">
+                                            <em>发放数量</em>
+                                            <em>领取率</em>
+                                            <em>使用率</em>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="item-backgound-color">
+                                        <p class="item-title">
+                                            <em class="item-name">5元代金券</em>
+                                            <em class="item-time">2019/9/23</em>
+                                        </p>
+                                        <div class="item-content">
+                                            <div class="item-content-num">
+                                                <em>1000</em>
+                                                <em>63%</em>
+                                                <em>23%</em>
+                                            </div>
+                                            <div class="item-content-desc">
+                                                <em>发放数量</em>
+                                                <em>领取率</em>
+                                                <em>使用率</em>
+                                            </div>
+                                        </div>
+                                    </li>
+                </ul>
+            </div> -->
+        </main>
+        <div class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+            <div class="ui-navbar">
+                <ul class="ui-grid-c">
+                    <li class="ui-block-a"><a href="../static/index.html" class="ui-link ui-btn"><i
+                                class="fa icon-chart"></i>数据</a></li>
+                    <li class="ui-block-b"><a href="../static/ranking.html" class="ui-link ui-btn"><i
+                                class="fa icon-trophy"></i>排行</a></li>
+                    <li class="ui-block-c"><a href="../static/marketing.html" class="ui-link ui-btn ui-btn-active"><i
+                                class="fa icon-ticket"></i>营销</a></li>
+                    <li class="ui-block-d"><a href="../static/mine.html" class="ui-link ui-btn"><i class="fa icon-user"></i>我的</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <footer>
+            <a href="index.html">
+                <img src="./assets/img/icons/status1_1@2x.png" alt=""><br/>
+                <em>数据</em>
+            </a>
+            <a href="ranking.html">
+                <img src="./assets/img/icons/status2_1@2x.png" alt=""><br/>
+                <em>排行</em>
+            </a>
+            <a href="yinxiao2.html" class="light">
+                <img src="./assets/img/icons/yinxiao_light.png" alt=""><br/>
+                <em>营销</em>
+            </a>
+            <a href="mine.html">
+                <img src="./assets/img/icons/status4_1@2x.png" alt=""><br/>
+                <em>我的</em>
+                </a>
+        </footer> -->
+    </div>
+</body>
+<script>
+    // 适配
+    var clientWidth = document.documentElement.clientWidth;
+    var canvasWidth = Math.floor(clientWidth * 250 / 750);
+    var innerR = canvasWidth * 0.8 * 0.5;
+
+    var myCanvas = document.getElementsByClassName("cirle-canvas")[0];
+    if (myCanvas.getContext) {
+        var context = myCanvas.getContext('2d');
+    }
+
+    myCanvas.setAttribute("width", canvasWidth + "px");
+    myCanvas.setAttribute("height", canvasWidth + "px");
+    context.lineWidth = 15;
+    context.lineCap = 'round';
+    context.shadowBlur = 20;
+    context.shadowColor = "rgb(254,246,248)";
+    context.translate(canvasWidth / 2, canvasWidth / 2);
+
+    var deg = Math.PI / 180;
+    function chartCanvas(xratio, yratio) {
+        context.beginPath();
+        context.strokeStyle = '#FFF6F8';
+        context.arc(0, 0, innerR, 0, 360 * deg);
+        context.stroke();
+        if (xratio) {
+            context.beginPath();
+            context.strokeStyle = 'rgb(246,83,88)';
+            context.arc(0, 0, innerR, 0, xratio * 360 * deg);
+            context.stroke();
+        }
+        if (yratio) {
+            context.beginPath();
+            context.strokeStyle = 'rgb(108,149,252)';
+            context.arc(0, 0, innerR, 0, yratio * 360 * deg);
+            context.stroke();
+        }
+    }
+    // chartCanvas();
+    chartCanvas(0.75,0.5); 
+</script>
+
+</html>
